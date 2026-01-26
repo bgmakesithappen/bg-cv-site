@@ -1,8 +1,4 @@
 {
-  "build": {
-    "env": {
-      "HUGO_VERSION": "0.142.0",
-      "HUGO_ENABLEGITINFO": "true"   // optional, often helpful
-    }
-  }
+  "buildCommand": "hugo --gc --minify",
+  "outputDirectory": "public"
 }

@@ -99,3 +99,13 @@ defaultContentLanguageInSubdir = false
     name = "Connect"
     pageRef = "/contact"
     weight = 5
+
+# PostHog Analytics
+# API key is read from HUGO_POSTHOG_API_KEY environment variable
+[params.posthog]
+  enabled = true
+  apiHost = "https://us.i.posthog.com"  # Use https://eu.i.posthog.com for EU cloud
+
+# Security - allow access to PostHog env var
+[security.funcs]
+  getenv = ['^HUGO_', '^CI$']

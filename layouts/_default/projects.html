@@ -1,0 +1,41 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-5xl font-bold mb-6 text-text-primary">{{ .Title }}</h1>
+
+    <div class="space-y-6">
+        {{ $projectsData := index site.Data .Language.Lang "projects" }}
+        {{ range $projectsData.projects }}
+        <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="project-card block p-6 rounded-lg bg-bg-secondary border border-border-primary transition-all duration-300 group">
+            <div class="flex flex-col gap-4">
+                <div>
+                    <h3 class="inline-flex items-center text-2xl font-bold text-text-primary group-hover:text-accent transition-colors duration-200">
+                        {{ .title }}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 opacity-50 group-hover:opacity-100 transition-opacity duration-200">
+                            <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                        </svg>
+                    </h3>
+                </div>
+                <p class="text-text-secondary text-lg">{{ .description }}</p>
+                <div class="flex flex-wrap gap-2">
+                    {{ $techs := split .tech "," }}
+                    {{ range $tech := $techs }}
+                    <span class="px-3 py-1 text-sm bg-bg-tertiary text-text-secondary rounded-full border border-border-primary">{{ $tech }}</span>
+                    {{ end }}
+                </div>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+</div>
+
+<style>
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    border-color: #00d4ff;
+}
+</style>
+{{ end }}

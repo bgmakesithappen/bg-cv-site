@@ -1,0 +1,41 @@
+[[categories]]
+name = "Security & Passwords"
+
+  [[categories.links]]
+  title = "Your Password Sucks"
+  url = "https://yourpasswordsucks.com/"
+  description = "Check how strong your password really is"
+
+  [[categories.links]]
+  title = "Bitwarden"
+  url = "https://bitwarden.com/"
+  description = "Open source password manager"
+
+  [[categories.links]]
+  title = "Have I Been Pwned"
+  url = "https://haveibeenpwned.com/"
+  description = "Check if your email has been in a data breach"
+
+[[categories]]
+name = "Privacy"
+
+  [[categories.links]]
+  title = "Proton"
+  url = "https://proton.me/"
+  description = "Encrypted email, calendar, and cloud storage"
+
+[[categories]]
+name = "Productivity"
+
+  [[categories.links]]
+  title = "Notion"
+  url = "https://www.notion.so/"
+  description = "All-in-one workspace for notes and projects"
+
+[[categories]]
+name = "Worth Reading"
+
+  [[categories.links]]
+  title = "Collaboration Sucks"
+  url = "https://newsletter.posthog.com/p/collaboration-sucks"
+  description = "PostHog's take on why less collaboration can be better"

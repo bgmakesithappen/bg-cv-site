@@ -1,0 +1,101 @@
+baseURL = "https://bengregory.me"
+languageCode = 'en-us'
+title = 'Ben Gregory - Implementation Engineer'
+theme = 'hugo-noir'
+
+relativeURLs = true
+canonifyURLs = true
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Ben Gregory - Implementation Engineer"
+    weight = 1
+    contentDir = "content/en"
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = "About"
+        pageRef = "/about"
+        weight = 1
+      [[languages.en.menu.main]]
+        name = "Projects"
+        pageRef = "/projects"
+        weight = 2
+      [[languages.en.menu.main]]
+        name = "Links I Like"
+        pageRef = "/links"
+        weight = 3
+      [[languages.en.menu.main]]
+        name = "Resume"
+        pageRef = "/experience"
+        weight = 4
+      [[languages.en.menu.main]]
+        name = "Connect"
+        pageRef = "/contact"
+        weight = 5
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  name = "Ben Gregory"
+  profile_image = "/images/profile.jpg"
+  email = ""
+  github = "https://github.com/bgmakesithappen"
+  github_username = "bgmakesithappen"
+  linkedin = "https://www.linkedin.com/in/bgmakesithappen/"
+  linkedin_username = "bgmakesithappen"
+
+  [params.tech]
+  row1 = [
+    { icon = "devicon-amazonwebservices-plain-wordmark", name = "AWS" },
+    { icon = "devicon-kubernetes-plain", name = "Kubernetes" },
+    { icon = "devicon-docker-plain", name = "Docker" },
+    { icon = "devicon-python-plain", name = "Python" },
+    { icon = "devicon-linux-plain", name = "Linux" },
+    { icon = "devicon-postgresql-plain", name = "PostgreSQL" },
+    { icon = "devicon-react-original", name = "React" },
+    { icon = "devicon-javascript-plain", name = "JavaScript" }
+  ]
+  row2 = [
+    { icon = "devicon-terraform-plain", name = "Terraform" },
+    { icon = "devicon-nginx-original", name = "Nginx" },
+    { icon = "devicon-git-plain", name = "Git" },
+    { icon = "devicon-bash-plain", name = "Bash" },
+    { icon = "devicon-fastapi-plain", name = "FastAPI" },
+    { icon = "devicon-nodejs-plain", name = "Node.js" },
+    { icon = "devicon-html5-plain", name = "HTML5" },
+    { icon = "devicon-css3-plain", name = "CSS3" }
+  ]
+
+  [[params.certifications]]
+    title = "AWS Certified Cloud Practitioner"
+    company = "Amazon Web Services"
+    date = "Active"
+    url = ""
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 1
+  [[menu.main]]
+    name = "Projects"
+    pageRef = "/projects"
+    weight = 2
+  [[menu.main]]
+    name = "Links I Like"
+    pageRef = "/links"
+    weight = 3
+  [[menu.main]]
+    name = "Resume"
+    pageRef = "/experience"
+    weight = 4
+  [[menu.main]]
+    name = "Connect"
+    pageRef = "/contact"
+    weight = 5

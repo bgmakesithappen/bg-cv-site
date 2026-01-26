@@ -1,0 +1,29 @@
+# Build output
+public/
+resources/
+
+# Hugo lock file
+.hugo_build.lock
+
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local Claude settings
+.claude/
+
+# Logs
+*.log

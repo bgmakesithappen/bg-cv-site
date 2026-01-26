@@ -1,0 +1,9 @@
+name = "Ben Gregory"
+location = "Salt Lake City, UT"
+profile_image = "/images/profile.jpg"
+bio = "Implementation & Customer Solutions Engineer with 3+ years owning enterprise customer onboarding, server deployment, and post-go-live support in B2B SaaS."
+
+[social]
+  github = "https://github.com/bgmakesithappen"
+  linkedin = "https://www.linkedin.com/in/bgmakesithappen/"
+  email = "jbgregorypro@pm.me"

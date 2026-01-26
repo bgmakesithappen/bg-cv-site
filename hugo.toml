@@ -1,4 +1,4 @@
-baseURL = "https://bengregory.me"
+baseURL = "https://bengregory.me/"
 languageCode = 'en-us'
 title = 'Ben Gregory - Implementation Engineer'
 theme = 'hugo-noir'

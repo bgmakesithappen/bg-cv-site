@@ -44,7 +44,7 @@ defaultContentLanguageInSubdir = false
 [params]
   name = "Ben Gregory"
   profile_image = "/images/profile.jpg"
-  email = ""
+  email = "ben@bengregory.me"
   github = "https://github.com/bgmakesithappen"
   github_username = "bgmakesithappen"
   linkedin = "https://www.linkedin.com/in/bgmakesithappen/"

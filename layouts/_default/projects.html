@@ -5,7 +5,8 @@
     <div class="space-y-6">
         {{ $projectsData := index site.Data .Language.Lang "projects" }}
         {{ range $projectsData.projects }}
-        <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="project-card block p-6 rounded-lg bg-bg-secondary border border-border-primary transition-all duration-300 group">
+        {{ if .link }}
+        <a href="{{ .link }}"{{ if not (hasPrefix .link "/") }} target="_blank" rel="noopener noreferrer"{{ end }} class="project-card block p-6 rounded-lg bg-bg-secondary border border-border-primary transition-all duration-300 group">
             <div class="flex flex-col gap-4">
                 <div>
                     <h3 class="inline-flex items-center text-2xl font-bold text-text-primary group-hover:text-accent transition-colors duration-200">
@@ -24,6 +25,22 @@
                 </div>
             </div>
         </a>
+        {{ else }}
+        <div class="project-card no-link block p-6 rounded-lg bg-bg-secondary border border-border-primary transition-all duration-300">
+            <div class="flex flex-col gap-4">
+                <div>
+                    <h3 class="text-2xl font-bold text-text-primary">{{ .title }}</h3>
+                </div>
+                <p class="text-text-secondary text-lg">{{ .description }}</p>
+                <div class="flex flex-wrap gap-2">
+                    {{ $techs := split .tech "," }}
+                    {{ range $tech := $techs }}
+                    <span class="px-3 py-1 text-sm bg-bg-tertiary text-text-secondary rounded-full border border-border-primary">{{ $tech }}</span>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{ end }}
         {{ end }}
     </div>
 </div>
@@ -33,7 +50,7 @@
     transition: all 0.3s ease;
 }
 
-.project-card:hover {
+.project-card:not(.no-link):hover {
     transform: translateY(-2px);
     border-color: #00d4ff;
 }

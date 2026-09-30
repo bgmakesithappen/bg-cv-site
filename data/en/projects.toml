@@ -2,7 +2,6 @@
   title = "Kubernetes Hit Piece"
   description = "Self-documenting Kubernetes deployment on AWS EKS featuring FastAPI backend and React frontend dashboard with comprehensive infrastructure automation."
   tech = "Kubernetes, AWS EKS, FastAPI, React, Docker"
-  link = "https://k8s.bengregory.me"
 
 [[projects]]
   title = "Docker Multi-Host Deployment"

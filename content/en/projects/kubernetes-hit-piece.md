@@ -5,7 +5,7 @@ draft: false
 tags: ["Kubernetes", "AWS EKS", "FastAPI", "React", "Docker"]
 categories: ["Infrastructure"]
 description: "Self-documenting Kubernetes deployment on AWS EKS"
-projectUrl: "https://k8s.bengregory.me"
+projectUrl: ""
 ---
 
 Self-documenting Kubernetes deployment on AWS EKS featuring FastAPI backend and React frontend dashboard with comprehensive infrastructure automation.

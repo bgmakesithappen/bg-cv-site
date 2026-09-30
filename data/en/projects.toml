@@ -2,10 +2,15 @@
   title = "Kubernetes Hit Piece"
   description = "Self-documenting Kubernetes deployment on AWS EKS featuring FastAPI backend and React frontend dashboard with comprehensive infrastructure automation."
   tech = "Kubernetes, AWS EKS, FastAPI, React, Docker"
-  link = "https://k8s.bengregory.me"
 
 [[projects]]
   title = "Docker Multi-Host Deployment"
   description = "Automated deployment system that provisions cloud infrastructure and deploys containerized applications to multiple servers with a single command."
   tech = "Docker, AWS, Nginx, Terraform, Python"
   link = "https://github.com/bgmakesithappen/docker-multi-host-deploy/blob/main/PORTFOLIO_SUMMARY.md"
+
+[[projects]]
+  title = "Self-Hosted Homelab"
+  description = "Production-grade homelab on a Synology NAS running self-hosted identity (authentik OIDC), internal DNS (PiHole), documentation (Wiki.js), and automated backups — all under a custom internal CA."
+  tech = "Docker Compose, authentik, Wiki.js, PostgreSQL, PiHole, Portainer, Bash"
+  link = "/projects/homelab/"

@@ -22,9 +22,8 @@ Thumbs.db
 *.swp
 *.swo
 
-# Local Claude settings
-.claude/
-CLAUDE.md
+# Local Claude settings (track .claude/ but not local overrides)
+.claude/settings.local.json
 
 # Logs
 *.log

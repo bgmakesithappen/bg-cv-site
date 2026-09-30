@@ -1,6 +1,12 @@
 {{ define "main" }}
 <div class="max-w-4xl mx-auto px-4 py-12">
     <h1 class="text-5xl font-bold mb-8 text-text-primary">{{ .Title }}</h1>
+    {{ with .Content }}
+    <div class="resume-content bg-bg-secondary p-6 md:p-8 rounded-lg mb-12 border border-border-primary text-text-secondary text-lg leading-relaxed">
+        {{ . }}
+    </div>
+    <h2 class="text-3xl font-bold mb-8 text-text-primary">Professional Experience</h2>
+    {{ end }}
     <div class="space-y-8">
         {{ $experienceData := index site.Data .Language.Lang "experience" }}
         {{ with $experienceData.experience }}
@@ -81,6 +87,48 @@
 </div>
 
 <style>
+    .resume-content h2 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+    }
+    .resume-content h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin: 1.25rem 0 0.5rem;
+    }
+    .resume-content p {
+        margin-bottom: 1rem;
+    }
+    .resume-content ul {
+        list-style: disc;
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .resume-content li {
+        margin-bottom: 0.25rem;
+    }
+    .resume-content strong {
+        color: var(--text-primary);
+    }
+    .resume-content a {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        transition: color 0.2s;
+    }
+    .resume-content a:hover {
+        color: var(--accent);
+    }
+    .resume-content hr {
+        border-color: var(--border-primary);
+        margin: 2rem 0;
+    }
+    .resume-content > :last-child {
+        margin-bottom: 0;
+    }
+
     .github-link {
         position: relative;
         display: inline-flex;

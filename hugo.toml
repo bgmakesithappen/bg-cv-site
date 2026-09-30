@@ -76,29 +76,7 @@ defaultContentLanguageInSubdir = false
     title = "AWS Certified Cloud Practitioner"
     company = "Amazon Web Services"
     date = "Active"
-    url = ""
-
-[menu]
-  [[menu.main]]
-    name = "About"
-    pageRef = "/about"
-    weight = 1
-  [[menu.main]]
-    name = "Projects"
-    pageRef = "/projects"
-    weight = 2
-  [[menu.main]]
-    name = "Links I Like"
-    pageRef = "/links"
-    weight = 3
-  [[menu.main]]
-    name = "Resume"
-    pageRef = "/experience"
-    weight = 4
-  [[menu.main]]
-    name = "Connect"
-    pageRef = "/contact"
-    weight = 5
+    url = "https://www.credly.com/badges/48458dc0-16da-4fe6-a33b-599943204d81/public_url"
 
 # PostHog Analytics
 # API key is read from HUGO_POSTHOG_API_KEY environment variable

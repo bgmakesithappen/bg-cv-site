@@ -3,6 +3,7 @@ title: "Resume"
 date: 2024-01-01
 draft: false
 layout: "experience"
+aliases: ["/resume/"]
 description: "Ben Gregory - Implementation & Customer Solutions Engineer Resume"
 ---
 
@@ -42,7 +43,4 @@ B.S. in Anthropology
 
 ## Certifications
 
-- **AWS Certified Cloud Practitioner** - Amazon Web Services
-
----
-
+- **[AWS Certified Cloud Practitioner](https://www.credly.com/badges/48458dc0-16da-4fe6-a33b-599943204d81/public_url)** - Amazon Web Services

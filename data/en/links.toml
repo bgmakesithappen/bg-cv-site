@@ -39,6 +39,3 @@ name = "Worth Reading"
   title = "Collaboration Sucks"
   url = "https://newsletter.posthog.com/p/collaboration-sucks"
   description = "PostHog's take on why less collaboration can be better"
-
-
-#adding for deployment

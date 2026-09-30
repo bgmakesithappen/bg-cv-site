@@ -57,16 +57,10 @@
                 <div class="carousel-container">
                     <div class="carousel-track carousel-track-left-to-right">
                         {{- range .row1 -}}
-                            <div class="carousel-item">
-                                <i class="{{ .icon }}"></i>
-                                <span class="text-xl">{{ .name }}</span>
-                            </div>
+                            {{ partial "tech-item.html" . }}
                         {{- end -}}
                         {{- range .row1 -}}
-                            <div class="carousel-item">
-                                <i class="{{ .icon }}"></i>
-                                <span class="text-xl">{{ .name }}</span>
-                            </div>
+                            {{ partial "tech-item.html" . }}
                         {{- end -}}
                     </div>
                 </div>
@@ -74,16 +68,10 @@
                 <div class="carousel-container -mt-1">
                     <div class="carousel-track-reverse">
                         {{- range .row2 -}}
-                            <div class="carousel-item">
-                                <i class="{{ .icon }}"></i>
-                                <span class="text-xl">{{ .name }}</span>
-                            </div>
+                            {{ partial "tech-item.html" . }}
                         {{- end -}}
                         {{- range .row2 -}}
-                            <div class="carousel-item">
-                                <i class="{{ .icon }}"></i>
-                                <span class="text-xl">{{ .name }}</span>
-                            </div>
+                            {{ partial "tech-item.html" . }}
                         {{- end -}}
                     </div>
                 </div>
@@ -133,6 +121,12 @@
 
 .carousel-item i {
     font-size: 2.25rem;
+}
+
+.carousel-item svg {
+    width: 2.25rem;
+    height: 2.25rem;
+    flex-shrink: 0;
 }
 
 .carousel-item span {

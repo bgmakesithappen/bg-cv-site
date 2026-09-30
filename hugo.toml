@@ -1,7 +1,8 @@
-baseURL = "https://bengregory.me/"
+baseURL = "https://www.bengregory.me/"
 languageCode = 'en-us'
-title = 'Ben Gregory - Implementation Engineer'
+title = 'Ben Gregory - Implementation & Customer Solutions Engineer'
 theme = 'hugo-noir'
+enableRobotsTXT = true
 
 relativeURLs = true
 canonifyURLs = true
@@ -12,7 +13,7 @@ defaultContentLanguageInSubdir = false
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Ben Gregory - Implementation Engineer"
+    title = "Ben Gregory - Implementation & Customer Solutions Engineer"
     weight = 1
     contentDir = "content/en"
     [languages.en.menu]
@@ -52,26 +53,34 @@ defaultContentLanguageInSubdir = false
 
   description = "Ben Gregory — Implementation & Customer Solutions Engineer specializing in enterprise onboarding, Linux server deployment, and automation."
 
+  # Home page "What I work with" carousel. Only list tech backed up by the resume or a project page.
   [params.tech]
+  # Row 1: infrastructure & cloud
   row1 = [
     { icon = "devicon-amazonwebservices-plain-wordmark", name = "AWS" },
-    { icon = "devicon-kubernetes-plain", name = "Kubernetes" },
-    { icon = "devicon-docker-plain", name = "Docker" },
-    { icon = "devicon-python-plain", name = "Python" },
     { icon = "devicon-linux-plain", name = "Linux" },
-    { icon = "devicon-postgresql-plain", name = "PostgreSQL" },
-    { icon = "devicon-react-original", name = "React" },
-    { icon = "devicon-javascript-plain", name = "JavaScript" }
-  ]
-  row2 = [
-    { icon = "devicon-terraform-plain", name = "Terraform" },
+    { icon = "devicon-almalinux-plain", name = "AlmaLinux" },
+    { icon = "devicon-docker-plain", name = "Docker" },
+    { icon = "devicon-kubernetes-plain", name = "Kubernetes" },
     { icon = "devicon-nginx-original", name = "Nginx" },
-    { icon = "devicon-git-plain", name = "Git" },
+    { icon = "devicon-postgresql-plain", name = "PostgreSQL" },
+    { icon = "devicon-microsoftsqlserver-plain", name = "SQL Server" },
+    { icon = "devicon-portainer-original", name = "Portainer" },
+    { svg = "authentik", name = "authentik" },
+    { svg = "openid", name = "OIDC" },
+    { icon = "devicon-okta-plain", name = "Okta" }
+  ]
+  # Row 2: scripting, automation & delivery tooling
+  row2 = [
+    { icon = "devicon-python-plain", name = "Python" },
     { icon = "devicon-bash-plain", name = "Bash" },
-    { icon = "devicon-fastapi-plain", name = "FastAPI" },
-    { icon = "devicon-nodejs-plain", name = "Node.js" },
-    { icon = "devicon-html5-plain", name = "HTML5" },
-    { icon = "devicon-css3-plain", name = "CSS3" }
+    { icon = "devicon-javascript-plain", name = "JavaScript" },
+    { icon = "devicon-git-plain", name = "Git" },
+    { icon = "devicon-github-original", name = "GitHub" },
+    { icon = "devicon-jira-plain", name = "Jira" },
+    { svg = "linear", name = "Linear" },
+    { icon = "devicon-confluence-plain", name = "Confluence" },
+    { icon = "devicon-salesforce-plain", name = "Salesforce" }
   ]
 
   [[params.certifications]]

@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-5xl font-bold mb-6 text-text-primary">Page not found</h1>
+    <div class="bg-bg-secondary p-8 rounded-lg border border-border-primary">
+        <p class="text-text-secondary text-lg mb-8">The page you're looking for doesn't exist or has moved.</p>
+        <div class="flex flex-wrap gap-4">
+            <a href="{{ "/" | relURL }}" class="px-6 py-3 rounded-lg bg-bg-tertiary border border-border-primary text-text-primary font-medium hover:border-accent transition-colors duration-300">Back to home</a>
+            <a href="{{ "/projects/" | relURL }}" class="px-6 py-3 rounded-lg bg-bg-tertiary border border-border-primary text-text-primary font-medium hover:border-accent transition-colors duration-300">View projects</a>
+        </div>
+    </div>
+</div>
+{{ end }}

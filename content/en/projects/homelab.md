@@ -29,11 +29,13 @@ Secrets (database password, OIDC client secret) are stored in Bitwarden — noth
 
 **Networking**
 
-DSM's built-in reverse proxy terminates HTTPS and forwards each subdomain to the appropriate container on localhost. PiHole resolves `*.bghub.cc` to the NAS IP so all services are reachable by hostname on the local network. A scoped ed25519 SSH deploy key lets Wiki.js push page content back to a `content` branch on GitHub — write access limited to that one repo.
+DSM's built-in reverse proxy terminates HTTPS and forwards each subdomain to the appropriate container on localhost. Container ports are bound to `127.0.0.1` only, so the proxy is the single entry point. PiHole resolves `*.bghub.cc` to the NAS IP so all services are reachable by hostname on the local network. A scoped ed25519 SSH deploy key lets Wiki.js push page content back to a `content` branch on GitHub — write access limited to that one repo.
 
 **Reliability**
 
-A nightly `pg_dump` via DSM Task Scheduler creates rolling 14-day backups. Dumps land under `/volume1` so Synology Hyper Backup includes them in its offsite rotation automatically. GitHub Dependabot opens weekly PRs for Docker image updates; Postgres major-version bumps are excluded and handled with a documented upgrade procedure.
+Both containers have health checks (`pg_isready` for Postgres, `/healthz` for Wiki.js), and Wiki.js only starts once the database reports healthy. Restart policies bring services back after a reboot.
+
+A nightly `pg_dump` via DSM Task Scheduler creates rolling 14-day backups; the script rejects empty dumps and locks down file permissions, and the restore procedure (`pg_restore`) is documented alongside it. Dumps land under `/volume1` so Synology Hyper Backup includes them in its offsite rotation automatically. GitHub Dependabot opens weekly PRs for Docker image updates; Postgres major-version bumps are excluded and handled with a documented upgrade procedure. Image tags are pinned, and redeploys happen only after reviewing the diff, with written rollback steps.
 
 ## Skills Demonstrated
 
@@ -42,3 +44,6 @@ A nightly `pg_dump` via DSM Task Scheduler creates rolling 14-day backups. Dumps
 - Infrastructure-as-code via Docker Compose with Git-based deploy workflow
 - Automated backup design with offsite-ready file placement
 - DNS management, reverse proxy configuration, and scoped credential hygiene
+- Container health checks and dependency ordering for predictable startup
+- Runbooks for backup, restore, upgrade, and rollback
+- AI-assisted operations with Claude Code: repo-specific skills and a read-only review agent

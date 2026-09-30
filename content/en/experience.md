@@ -19,8 +19,9 @@ Implementation & Customer Solutions Engineer with 3+ years owning enterprise cus
 
 - **Server & Systems:** Linux, VMWare/ESXi, basic Windows Server
 - **Cloud:** AWS Certified Cloud Practitioner (EC2, IAM, VPC, S3, RDS)
-- **Identity & Security:** SAML, SSO, PAM, IAM (Imprivata CPAM/VPAM/IPAM)
-- **Tooling:** Salesforce, Jira, Confluence, n8n, Docker, Git, remote support tools
+- **Identity & Security:** SAML, OIDC/OAuth2, SSO, PAM, IAM (Imprivata CPAM/VPAM/IPAM)
+- **Tooling:** Salesforce, Jira, Confluence, n8n, Docker/Docker Compose, Git/GitHub, remote support tools
+- **AI Tooling:** Claude Code (custom skills, subagents, and project instructions for repo automation)
 
 ### Process & Core
 

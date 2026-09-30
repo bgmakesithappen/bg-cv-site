@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{/* The 404 page is served at arbitrary paths, so relativeURLs output must resolve from the site root */}}
+        {{ if eq .Kind "404" }}<base href="{{ site.BaseURL }}">{{ end }}
         <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
         {{ $desc := or .Description .Site.Params.description }}
         <meta name="description" content="{{ $desc }}">

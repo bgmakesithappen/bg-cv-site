@@ -1,0 +1,9 @@
+{{/* Carousel item: uses a Devicon class (`icon`) or an inline SVG from assets/icons/<svg>.svg (`svg`) */}}
+<div class="carousel-item">
+    {{- with .svg }}
+    {{ (resources.Get (printf "icons/%s.svg" .)).Content | safeHTML }}
+    {{- else }}
+    <i class="{{ .icon }}"></i>
+    {{- end }}
+    <span class="text-xl">{{ .name }}</span>
+</div>

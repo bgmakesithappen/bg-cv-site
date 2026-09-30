@@ -52,7 +52,7 @@
                 </a>
                 {{ end }}
                 <!-- Hamburger menu button for mobile -->
-                <button id="mobile-menu-button" class="md:hidden text-text-secondary hover:text-text-primary focus:outline-none">
+                <button id="mobile-menu-button" type="button" aria-label="Open menu" class="md:hidden text-text-secondary hover:text-text-primary focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -79,7 +79,7 @@
             <div class="flex justify-between items-center p-6">
                 <span class="text-xl font-bold text-text-primary">{{ T "menuTitle" }}</span>
                 <div class="flex items-center gap-4">
-                    <button id="mobile-menu-close" class="text-text-secondary hover:text-text-primary transition-colors duration-300 focus:outline-none">
+                    <button id="mobile-menu-close" type="button" aria-label="Close menu" class="text-text-secondary hover:text-text-primary transition-colors duration-300 focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>

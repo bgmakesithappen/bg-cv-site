@@ -9,6 +9,7 @@ Hugo static site deployed via Vercel at bengregory.me. Theme: `hugo-noir` (in `t
 - `static/` — Static assets served at site root
 - `hugo.toml` — Site config (base URL, params, PostHog analytics, menu)
 - `vercel.json` — Deployment config
+- `assets/css/site.css` + `tailwind.config.js` — Tailwind 3 compiled via Hugo PostCSS; run `npm install` before `hugo`/`hugo server`
 
 ## Conventions
 - Override theme templates in `layouts/` rather than editing `themes/hugo-noir/` directly.

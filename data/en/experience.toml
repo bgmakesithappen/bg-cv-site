@@ -7,7 +7,7 @@
   responsibilities = [
     "Design and implement automation workflows (n8n, Python, JavaScript, Docker) to eliminate repetitive tasks in booking, lead management, and reporting for small business clients",
     "Audit client operations to map manual processes, document current state, and propose automation backlogs with clear effort and impact estimates",
-    "Deploy and manage small AWS environments (EC2, IAM, VPC, S3) following AWS Well-Architected Framework appropriate for low-to mid-scale workloads"
+    "Deploy and manage small AWS environments (EC2, IAM, VPC, S3) following AWS Well-Architected Framework appropriate for low- to mid-scale workloads"
   ]
   technologies = ["n8n", "Python", "JavaScript", "Docker", "AWS"]
 
@@ -27,16 +27,16 @@
 
 [[experience]]
   role = "Technical Resident"
-  company = "Healthcare Corporations of America"
+  company = "Hospital Corporation of America"
   company_link = "https://hcahealthcare.com/"
   period = "2022"
   country = "USA"
   responsibilities = [
-    "Performed quality assurance of internal and external software products using PowerShell, Python, and MSSql",
+    "Performed quality assurance of internal and external software products using PowerShell, Python, and MSSQL",
     "Constructed SQL statements and queried internal databases to verify and validate data availability",
     "Supported test planning and execution for healthcare IT systems, documenting defects and working with developers to validate fixes"
   ]
-  technologies = ["PowerShell", "Python", "MSSql", "SQL"]
+  technologies = ["PowerShell", "Python", "MSSQL", "SQL"]
 
 [[experience]]
   role = "Apprentice"

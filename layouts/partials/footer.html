@@ -6,7 +6,7 @@
                 {{ $authorData := index site.Data .Language.Lang "author" }}
                 {{ $author := cond (and $authorData $authorData.name) $authorData site.Params }}
                 {{ with $author }}
-                <p class="text-text-secondary text-xm pb-12">© {{ now.Format "2006" }} {{ .name }}</p>
+                <p class="text-text-secondary text-sm pb-12">© {{ now.Format "2006" }} {{ .name }}</p>
                 {{ end }}
             </div>
         </div>

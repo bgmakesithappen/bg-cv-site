@@ -1,4 +1,5 @@
 {
+  "installCommand": "npm ci",
   "buildCommand": "hugo --gc --minify",
   "outputDirectory": "public"
 }

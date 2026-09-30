@@ -1,0 +1,52 @@
+{{ define "main" }}
+<div class="max-w-4xl mx-auto px-4 py-12">
+    <a href="{{ relURL "/projects/" }}" class="inline-flex items-center gap-2 text-text-secondary hover:text-accent transition-colors duration-200 mb-8 text-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7"/>
+        </svg>
+        All Projects
+    </a>
+
+    <h1 class="text-5xl font-bold mb-4 text-text-primary">{{ .Title }}</h1>
+
+    {{ if .Params.tags }}
+    <div class="flex flex-wrap gap-2 mb-8">
+        {{ range .Params.tags }}
+        <span class="px-3 py-1 text-sm bg-bg-tertiary text-text-secondary rounded-full border border-border-primary">{{ . }}</span>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <div class="bg-bg-secondary border border-border-primary rounded-lg p-8 prose-project">
+        {{ .Content }}
+    </div>
+
+    {{ with .Params.projectUrl }}
+    <div class="mt-8">
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-bg-tertiary border border-border-secondary text-text-secondary hover:text-accent hover:border-accent transition-all duration-200">
+            View Project
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17l9.2-9.2M17 17V7H7"/>
+            </svg>
+        </a>
+    </div>
+    {{ end }}
+</div>
+
+<style>
+.prose-project { color: var(--text-secondary); font-size: 1.125rem; line-height: 1.75; }
+.prose-project h2 { font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin: 2rem 0 1rem; }
+.prose-project h3 { font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin: 1.5rem 0 0.5rem; }
+.prose-project p { margin-bottom: 1.25rem; }
+.prose-project ul { list-style: none; padding: 0; margin-bottom: 1.25rem; }
+.prose-project ul li { padding-left: 1.25rem; position: relative; margin-bottom: 0.4rem; }
+.prose-project ul li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+.prose-project strong { color: var(--text-primary); font-weight: 600; }
+.prose-project hr { border-color: var(--border-primary); margin: 2rem 0; }
+.prose-project table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
+.prose-project th { text-align: left; padding: 0.5rem 1rem; color: var(--text-primary); font-weight: 600; border-bottom: 1px solid var(--border-secondary); }
+.prose-project td { padding: 0.5rem 1rem; border-bottom: 1px solid var(--border-primary); }
+.prose-project code { background: var(--bg-tertiary); padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.9em; color: var(--accent); }
+</style>
+{{ end }}

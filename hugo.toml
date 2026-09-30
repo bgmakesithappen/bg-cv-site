@@ -50,6 +50,8 @@ defaultContentLanguageInSubdir = false
   linkedin = "https://www.linkedin.com/in/bgmakesithappen/"
   linkedin_username = "bgmakesithappen"
 
+  description = "Ben Gregory — Implementation & Customer Solutions Engineer specializing in enterprise onboarding, Linux server deployment, and automation."
+
   [params.tech]
   row1 = [
     { icon = "devicon-amazonwebservices-plain-wordmark", name = "AWS" },

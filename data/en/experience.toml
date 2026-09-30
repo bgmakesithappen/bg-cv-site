@@ -62,5 +62,4 @@
     "Fabricated and repaired structural components on multiple aircraft types under strict tolerance and safety requirements",
     "Applied Lean/5S to ensure tool accountability and reduce setup time"
   ]
- # technologies = ["Lean", "5S", "TPS"]
-
+  technologies = ["Lean", "5S", "TPS"]

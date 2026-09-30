@@ -28,7 +28,16 @@
                     <div class="flex flex-col h-full p-4 md:p-6 rounded-lg bg-bg-tertiary border border-border-primary">
                         <div class="flex items-center justify-between mb-4">
                             <h3 class="text-lg md:text-xl font-semibold text-text-primary">
+                                {{ if .url }}
+                                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-accent transition-colors duration-200">
+                                    {{ .title }}
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-70">
+                                        <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                                    </svg>
+                                </a>
+                                {{ else }}
                                 {{ .title }}
+                                {{ end }}
                             </h3>
                         </div>
                         <p class="text-text-secondary text-sm">{{ .company }} - {{ .date }}</p>

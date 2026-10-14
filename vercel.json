@@ -1,4 +1,9 @@
 {
+  "build": {
+    "env": {
+      "HUGO_VERSION": "0.167.0"
+    }
+  },
   "installCommand": "npm ci",
   "buildCommand": "hugo --gc --minify",
   "outputDirectory": "public",

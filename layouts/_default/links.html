@@ -7,7 +7,7 @@
             {{ .Description }}
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {{ $linksData := index site.Data .Language.Lang "links" }}
+            {{ $linksData := index hugo.Data .Language.Lang "links" }}
             {{ range $linksData.categories }}
                 {{ range .links }}
                 <a href="{{ .url }}"

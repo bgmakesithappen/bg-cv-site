@@ -1,5 +1,4 @@
 baseURL = "https://www.bengregory.me/"
-languageCode = 'en-us'
 title = 'Ben Gregory - Implementation & Customer Solutions Engineer'
 theme = 'hugo-noir'
 enableRobotsTXT = true
@@ -12,7 +11,8 @@ defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.en]
-    languageName = "English"
+    locale = "en-us"
+    label = "English"
     title = "Ben Gregory - Implementation & Customer Solutions Engineer"
     weight = 1
     contentDir = "content/en"
@@ -98,3 +98,8 @@ defaultContentLanguageInSubdir = false
 # Security - allow access to PostHog env var
 [security.funcs]
   getenv = ['^HUGO_', '^CI$']
+
+# Modern language configuration requires Hugo 0.158.0 or newer.
+[module.hugoVersion]
+  min = "0.158.0"
+  extended = true

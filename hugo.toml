@@ -99,7 +99,7 @@ defaultContentLanguageInSubdir = false
 [security.funcs]
   getenv = ['^HUGO_', '^CI$']
 
-# Modern language configuration requires Hugo 0.158.0 or newer.
+# Minimum Hugo for `hugo.Data` and `locale`/`label` language keys. Hugo only warns
+# below this. The deployed version is pinned by HUGO_VERSION in vercel.json.
 [module.hugoVersion]
   min = "0.158.0"
-  extended = true

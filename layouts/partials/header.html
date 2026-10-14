@@ -44,7 +44,7 @@
     <div class="max-w-6xl mx-auto px-4">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div class="flex justify-between items-center">
-                {{ $authorData := index site.Data .Language.Lang "author" }}
+                {{ $authorData := index hugo.Data .Language.Lang "author" }}
                 {{ $author := cond (and $authorData $authorData.name) $authorData site.Params }}
                 {{ with $author }}
                 <a href="{{ absLangURL .Site.BaseURL }}" class="text-xl font-bold text-text-primary hover:text-accent transition-colors duration-300">

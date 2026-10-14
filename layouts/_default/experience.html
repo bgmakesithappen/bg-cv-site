@@ -8,7 +8,7 @@
     <h2 class="text-3xl font-bold mb-8 text-text-primary">Professional Experience</h2>
     {{ end }}
     <div class="space-y-8">
-        {{ $experienceData := index site.Data .Language.Lang "experience" }}
+        {{ $experienceData := index hugo.Data .Language.Lang "experience" }}
         {{ with $experienceData.experience }}
             {{ range . }}
             <div class="group relative pl-8 before:content-[''] before:absolute before:left-0 before:top-0 before:w-[2px] before:h-full before:bg-border-secondary before:rounded-full">

@@ -8,7 +8,7 @@
     {{ end }}
 
     <div class="space-y-6">
-        {{ $projectsData := index site.Data .Language.Lang "projects" }}
+        {{ $projectsData := index hugo.Data .Language.Lang "projects" }}
         {{ range $projectsData.projects }}
         {{ if .link }}
         <a href="{{ .link }}"{{ if not (hasPrefix .link "/") }} target="_blank" rel="noopener noreferrer"{{ end }} class="project-card block p-6 rounded-lg bg-bg-secondary border border-border-primary transition-all duration-300 group">

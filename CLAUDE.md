@@ -22,5 +22,5 @@ Hugo static site deployed via Vercel at bengregory.me. Theme: `hugo-noir` (in `t
 - Do not hardcode secrets or API keys.
 
 ## Tooling
-- Use the skills test-failures, build-errors, lint-summary, repo-map, diff-summary instead of raw commands.
-- Delegate codebase exploration to the scout agent instead of reading files directly.
+- Use the skills build-errors, repo-map, diff-summary instead of raw commands.
+- For broad multi-file exploration, delegate to the scout agent. For a known file or symbol, Grep directly.

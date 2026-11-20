@@ -9,7 +9,7 @@ description: "Ben Gregory - Implementation & Customer Solutions Engineer Resume"
 
 ## Summary
 
-Implementation & Customer Solutions Engineer with 3+ years owning enterprise customer onboarding, server deployment, and post-go-live support in B2B SaaS. Former USAF aircraft mechanic with Lean/5S experience and a track record of cutting onboarding time, reducing escalations, and tightening documentation. Currently building automation workflows (n8n, Docker, Python) and AWS-backed systems that reduce low-value work for small business clients. Targeting implementation / technical support / customer success engineer roles in B2B software.
+Implementation & Customer Solutions Engineer with 5+ years owning enterprise customer onboarding, server deployment, and post-go-live support in B2B SaaS. Former USAF aircraft mechanic with Lean/5S experience and a track record of cutting onboarding time, reducing escalations, and tightening documentation. Currently building automation workflows (n8n, Docker, Python) and AWS-backed systems that reduce low-value work for small business clients. Targeting implementation / technical support / customer success engineer roles in B2B software.
 
 ---
 

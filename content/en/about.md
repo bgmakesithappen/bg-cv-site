@@ -3,10 +3,10 @@ title: "About"
 date: 2024-01-01
 draft: false
 layout: "about"
-description: "Ben Gregory - Implementation & Customer Solutions Engineer with 3+ years owning enterprise customer onboarding and server deployment"
+description: "Ben Gregory - Implementation & Customer Solutions Engineer with 5+ years owning enterprise customer onboarding and server deployment"
 ---
 
-Implementation & Customer Solutions Engineer with 3+ years owning enterprise customer onboarding, server deployment, and post-go-live support in B2B SaaS.
+Implementation & Customer Solutions Engineer with 5+ years owning enterprise customer onboarding, server deployment, and post-go-live support in B2B SaaS.
 
 In practical terms, I'm a figure-it-the-hell-out-er.
 
